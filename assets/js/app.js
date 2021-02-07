@@ -1,4 +1,17 @@
-{
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
+
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
+
+/* Otherwise just put the config content (json): */
+
+particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 80,
@@ -8,7 +21,7 @@
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#ffed1e"
     },
     "shape": {
       "type": "circle",
@@ -26,7 +39,7 @@
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.7616207289111233,
       "random": false,
       "anim": {
         "enable": false,
@@ -36,7 +49,7 @@
       }
     },
     "size": {
-      "value": 5,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -48,17 +61,18 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
+      "color": "#000000",
+      "opacity": 0.10258919341219544,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 1.603412060865523,
       "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
+      "bounce": false,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -71,11 +85,11 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
@@ -83,7 +97,7 @@
       "grab": {
         "distance": 400,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.07403568520026646
         }
       },
       "bubble": {
@@ -94,7 +108,8 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 200
+        "distance": 200,
+        "duration": 0.4
       },
       "push": {
         "particles_nb": 4
@@ -104,13 +119,5 @@
       }
     }
   },
-  "retina_detect": true,
-  "config_demo": {
-    "hide_card": false,
-    "background_color": "#b61924",
-    "background_image": "",
-    "background_position": "50% 50%",
-    "background_repeat": "no-repeat",
-    "background_size": "cover"
-  }
-}
+  "retina_detect": true
+});
